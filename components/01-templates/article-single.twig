@@ -1,0 +1,17 @@
+{% extends "inc/_layout.twig" %}
+{% block main %}
+    {% include "@navigation" %}
+    {% include "@image-internal-bg-header" %}
+
+    <main>
+        <div class="flex items-center justify-center my-10">
+            {% include "@article-lede" %}
+        </div>
+        <div class="flex items-center justify-center">
+            {% include "@article" %}
+        </div>
+    </main>
+
+    {% include "@footer" %}
+
+{% endblock %}
